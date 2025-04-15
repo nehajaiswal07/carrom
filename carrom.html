@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrom!</title>
+</head>
+<style>
+    body{
+        background-image: url('images/hdwa.jfif');
+        height: 100%;
+        
+       
+        /* background-repeat: no-repeat; */
+    }
+    .board{
+        height: 545px;
+        width: 550px;
+        border: 15px solid rgb(167, 42, 42);
+        margin-left: 460px;
+        margin-top: 80px;
+        border-radius: 12px;
+        background-color: rgb(237, 196, 94);
+    }
+    .circle{
+        height: 30px;
+        width:30px;
+        border-radius: 50%;
+        background-color: rgb(146, 34, 34);
+    }
+    .circle2{
+        height: 30px;
+        width:30px;
+        border-radius: 50%;
+        background-color: rgb(146, 34, 34);
+        margin-top: 490px;
+    }
+    .circle3{
+        height: 30px;
+        width:30px;
+        border-radius: 50%;
+        background-color: rgb(146, 34, 34);
+        margin-top: -28px;
+        margin-left: 520px;
+    }
+    .circle4{
+        height: 30px;
+        width:30px;
+        border-radius: 50%;
+        background-color: rgb(146, 34, 34);
+        margin-top: -554px;
+        margin-left: 521px;
+    }
+
+    .line1{
+       width: 273px;
+       border: 3px solid black;
+       margin-left: 150px;
+       margin-top: 10px;
+
+    }
+    .innerline1{
+       width: 273px;
+       border: 2px solid black;
+       margin-left: 150px;
+       margin-top: 20px;
+
+    }
+    .innercircle1{
+        height: 28px;
+        width:28px;
+        border-radius: 50%;
+        border: 2px solid black;
+        background-color: rgb(241, 14, 14);
+        margin-top: -29px;
+        margin-left: 132px;
+    }
+    .innercircle2{
+        height: 28px;
+        width:28px;
+        border-radius: 50%;
+        border: 2px solid black;
+        background-color: rgb(241, 14, 14);
+        margin-top: -32px;
+        margin-left: 402px;
+    }
+    .line2{
+       width: 273px;
+       border: 3px solid black;
+       margin-left: 150px;
+       margin-top: 450px;
+
+    }
+     .innerline2{
+       width: 273px;
+       border: 2px solid black;
+       margin-left: 150px; 
+       margin-top: -30px; 
+
+     }  
+     .innercircle3{
+        height: 28px;
+        width:28px;
+        border-radius: 50%;
+        border: 2px solid black;
+        background-color: rgb(241, 14, 14);
+        margin-top: -4px;
+        margin-left: 129px;
+    }
+    .innercircle4{
+        height: 28px;
+        width:28px;
+        border-radius: 50%;
+        border: 2px solid black;
+        background-color: rgb(241, 14, 14);
+        margin-top: -32px;
+        margin-left: 407px;
+    } 
+    .line3{
+       height: 273px;
+       width: 21px;
+       border-right: 2px solid black;
+       border-left: 4px solid black;
+       /* margin-left: 150px; */
+       margin-top: -400px;
+       margin-left: 42px;
+
+    }
+     
+    .innercircle5{
+        height: 26px;
+        width:28px;
+        border-radius: 50%;
+        border: 2px solid black;
+        background-color: rgb(241, 14, 14);
+        margin-top: -12px;
+        margin-left: 38px;
+    }
+    .innercircle6{
+        height: 28px;
+        width:28px;
+        border-radius: 50%;
+        border: 2px solid black;
+        background-color: rgb(241, 14, 14);
+        margin-top: -300px;
+        margin-left: 39px;
+    } 
+
+    .line4{
+       height: 273px;
+       width: 21px;
+       border-left: 2px solid black;
+       border-right: 4px solid black;
+       /* margin-left: 150px; */
+       margin-top: -20px;
+       margin-left: 469px;
+}
+     
+     
+    .innercircle7{
+        height: 26px;
+        width:28px;
+        border-radius: 50%;
+        border: 2px solid black;
+        background-color: rgb(241, 14, 14);
+        margin-top: -15px;
+        margin-left: 467px;
+    }
+    .innercircle8{
+        height: 28px;
+        width:28px;
+        border-radius: 50%;
+        border: 2px solid black;
+        background-color: rgb(241, 14, 14);
+        margin-top: -300px;
+        margin-left: 467px;
+    } 
+    .middle img{
+        margin-left: 198px;
+        margin-top: 60px;
+        
+        
+
+        
+    }
+    .arrow1{
+        width: 300px;
+        height: 200px;
+        margin-top: -300px;
+        margin-left: 70px;
+        
+    }
+    .arrow2{
+        width: 300px;
+        height: 200px;
+        margin-top: 113px;
+        margin-left: 349px;
+        
+    }
+     .arrow3{
+        width: 300px;
+        height: 200px;
+        margin-top: -200px;
+        margin-left: 70px;
+        
+    }
+    
+    .arrow4{
+        width: 300px;
+        height: 200px;
+        margin-top: -520px;
+        margin-left: 380px;
+        
+    } 
+
+
+
+</style>
+<body>
+  <div class="board">
+    <div class="circle"></div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
+    <div class="circle4"></div>
+     
+    <div class="line1"></div>
+       
+    
+    <div class="innerline1"></div>
+    <div class="innercircle1"></div>
+    <div class="innercircle2"></div>
+
+    <div class="line2"></div>
+    <div class="innerline2"></div>
+    <div class="innercircle3"></div>
+    <div class="innercircle4"></div>
+
+    <div class="line3"></div>
+    <div class="innerline3"></div>
+    <div class="innercircle5"></div>
+    <div class="innercircle6"></div>
+
+
+    <div class="line4"></div>
+    <div class="innerline4"></div>
+    <div class="innercircle7"></div>
+    <div class="innercircle8"></div>
+
+    <div class="middle">
+        <img src="images/carrom2-removebg-preview.png" height="150px",width="150px">
+    </div>
+
+    <div class="arrow1">
+        <img src="images/ar2.png">
+
+    </div>
+    <div class="arrow2">
+        <img src="images/ar1.png">
+        
+    </div>
+     <div class="arrow3">
+        <img src="images/ar3.png">
+    </div>
+    <div class="arrow4">
+        <img src="images/ar4.png">
+    </div> 
+
+    
+    
+
+
+
+ 
+    
+
+
+</div>
+
+
+
+
+
+</body>
+</html>
